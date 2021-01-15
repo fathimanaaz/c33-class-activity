@@ -87,13 +87,13 @@ function mouseDragged(){
 
 
 function mouseReleased(){
-    slingShot.fly();
+    slingshot.fly();
     gameState = "launched";
 }
 
 function keyPressed(){
 
-    if(keyCode === 34){
+    if(keyCode === 32){
 
        bird.trajectory = [] 
        Matter.Body.setPosition(bird.body,{x:200,y:50})
